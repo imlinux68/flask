@@ -29,6 +29,11 @@ def projects():
 def about():
     return 'The about page'
 
+@app.route('/login')
+def login():
+    abort(401)
+    # 401 access deny message
+    this_is_never_executed()
 
 if __name__ == "__main__"
     app.run()
