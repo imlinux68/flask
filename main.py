@@ -21,5 +21,14 @@ def show_post(post_id):
     # shoe id with data, id - integer num
     return 'Post %d' % post_id
 
+@app.route('/projects/')
+def projects():
+    return 'The project page'
+
+@app.route('/about')
+def about():
+    return 'The about page'
+
+
 if __name__ == "__main__"
     app.run()
